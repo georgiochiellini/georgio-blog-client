@@ -1,0 +1,31 @@
+
+
+.panel {
+
+    .content {
+        margin-top: var(--ptop);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .side {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .left-side {
+            gap: 25px;
+
+            .status {
+                font-size: 18px;
+                font-weight: 500;
+                letter-spacing: 1px;
+            }
+        }
+
+        .right-side {
+            
+        }
+    }
+}

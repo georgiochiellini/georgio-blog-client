@@ -1,0 +1,28 @@
+
+
+.session-process {
+
+
+    & > .center {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+    }
+
+    & > .stopwatch {
+        transform: translate(-50%, -200px);
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    & > .label {
+        transform: translate(-50%, 140px);
+        font-size: 22px;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+
+    & > button {
+        transform: translate(-50%, 250px);
+    }
+}

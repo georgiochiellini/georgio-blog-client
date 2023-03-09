@@ -1,0 +1,137 @@
+
+
+.video-block {
+    padding: 20px;
+    transition: all .15s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        transform: scale(1.01);
+        & > .left-side > .screen > .play {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .side {
+
+    }
+
+    .left-side {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        .screen {
+            min-width: 160px;
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            background-position: center;
+            background-size: contain;
+            position: relative;
+
+            .duration {
+                position: absolute;
+                right: 7px;
+                bottom: 7px;
+                font-size: 11px;
+                padding: 2px 7px;
+                background-color: var(--dark-color-2);
+                border-radius: 2px;
+            }
+
+            .play {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                background: linear-gradient(45deg, var(--base-color), var(--sub-color-2));
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .15s ease 0s;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                }
+            }
+
+            
+        }
+
+        .info {
+            height: 110px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .text-info {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+                .title {
+                    font-size: 20px;
+                    height: 24px;
+                    overflow: hidden;
+                }
+                .channel-title {
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+            
+            .category {
+                margin-bottom: 10px;
+                font-weight: 300;
+            }
+        }
+
+    }
+    .right-side {
+        height: 110px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .delete {
+            margin-right: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: flex-end;
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+
+        .bottom-panel {
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            img {
+                
+                &:last-child {
+                    width: 30px;
+                    height: 30px;
+                    cursor: pointer;
+                }
+                &:first-child {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

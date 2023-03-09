@@ -1,0 +1,16 @@
+
+
+.modal-edit-user {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & > div:last-child {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .load-wrapper {
+        padding: 30px;
+    }
+}

@@ -1,0 +1,30 @@
+
+
+.add-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: var(--dark-color-2);
+
+    .content {
+        display: flex;
+        gap: 15px;
+        font-weight: 500;
+        align-items: center;
+        
+        .label {
+            display: block;
+
+            &.l {
+                font-size: 36px;
+            }
+            &.r {
+                font-size: 20px;
+            }
+        }
+        
+    }
+}

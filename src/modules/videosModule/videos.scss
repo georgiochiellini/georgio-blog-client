@@ -1,0 +1,20 @@
+
+
+.videos {
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+    & > .content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        & > .title {
+            font-size: 22px;
+            margin-bottom: 10px;
+            letter-spacing: .5px;
+            font-weight: 500;
+        }
+    }
+    
+}

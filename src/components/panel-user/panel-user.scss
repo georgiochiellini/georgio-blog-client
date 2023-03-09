@@ -1,0 +1,28 @@
+
+
+.panel-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-right: 40px;
+    background-color: var(--dark-color-2);
+    padding: 5px 5px 5px 15px;
+    border-radius: 2px;
+
+
+    .username {
+
+    }
+
+    .buttons {
+        display: flex;
+        gap: 7px;
+
+        img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+}

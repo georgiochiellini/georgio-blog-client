@@ -1,0 +1,38 @@
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    z-index: 100;
+    transition: all .3s ease 0s;
+
+    &.scrolled {
+        height: 65px;
+        background-color: var(--dark-color-1);
+        box-shadow: 0 0 5px black;
+    }
+
+    & > .content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        & > .side {
+            display: flex;
+            align-items: center;
+
+            &.right {
+                
+            }
+
+            &.left {
+                gap: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+
+
+.background-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vw;
+    background-color: var(--dark-color-1);
+    box-sizing: border-box;
+    animation: pulse 10s ease infinite;
+    transform: translate(-67%, -70%) rotate(49deg);
+    z-index: 3;
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 20px var(--sub-color-0);
+        } 50% {
+            box-shadow: 0 0 35px var(--sub-color-1);
+        } 100% {
+            box-shadow: 0 0 20px var(--sub-color-0);
+        }
+    }
+}

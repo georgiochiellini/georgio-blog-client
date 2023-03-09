@@ -1,0 +1,28 @@
+
+
+.email-sender {
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 15px;
+
+    .email-field {
+        display: flex;
+    }
+
+    .code-field {
+
+    }
+
+    button {
+        padding: 5px 10px;
+        border-radius: 0;
+        box-shadow: none;
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    // .input:last-child {
+    //     width: 50px;
+    // }
+}

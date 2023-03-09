@@ -1,0 +1,27 @@
+
+
+.message {
+    position: fixed;
+    // top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 10px 15px;
+    min-width: 485px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-color-2);
+    border-radius: 3px;
+    transition: all .5s ease 0s;
+    z-index: 201;
+
+    // &.active {
+    //     transform: translate(-50%, 0);
+    // }
+
+    span {
+        display: block;
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+}

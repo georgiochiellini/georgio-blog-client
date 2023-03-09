@@ -1,17 +1,21 @@
-import React from 'react';
+import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import App from './app/App';
+import MessageStore from './app/stores/MessageStore';
+import MobileStore from './app/stores/MobileStore';
+import UserStore from './app/stores/UserStore'
+import WindowStore from './app/stores/WindowStore';
+
+export const Context = createContext(null)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <Context.Provider value={{
+    user: new UserStore(),
+    messages: new MessageStore(),
+    windowOpener: new WindowStore(),
+    mobile: new MobileStore()
+  }}>
     <App />
-  </React.StrictMode>
+  </Context.Provider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

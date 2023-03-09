@@ -1,0 +1,39 @@
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 200;
+    backdrop-filter: blur(7px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .content {
+        width: 500px;
+        padding: 15px 20px;
+        position: relative;
+
+        .title {
+            font-size: 18px;
+        }
+        .text {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .body {
+            margin: 35px 0 20px;
+
+        }
+        .buttons {
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+    }
+
+}

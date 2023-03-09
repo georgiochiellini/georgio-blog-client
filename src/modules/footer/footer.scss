@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap');
+
+.footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .label {
+        display: flex;
+        font-family: 'Noto Sans JP', serif;
+        font-weight: 900;
+        font-size: 26px;
+        letter-spacing: 1px;
+
+        span {
+            display: block;
+            background: linear-gradient(45deg, var(--base-color), var(--sub-color-2));
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            &.w {
+                background: linear-gradient(0deg, var(--base-color), var(--base-color));
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                transform: rotate(180deg) translateY(-9px);
+            }
+        }
+    }
+
+    
+}

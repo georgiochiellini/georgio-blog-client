@@ -1,0 +1,40 @@
+
+
+.scroller {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+
+    img {
+        width: 30px;
+        height: 30px;
+        transition: all .3s ease 0s;
+
+        &.up {
+            transform: rotate(-90deg);
+        }
+
+        &.down {
+            transform: rotate(90deg);
+        }
+    }
+
+    span {
+        font-size: 19px;
+        letter-spacing: 1px;
+        font-weight: 500;
+    }
+
+    &:hover {
+        img.up {
+            transform: rotate(-90deg) translateX(-2px);
+        }
+        img.down {
+            transform: rotate(90deg) translateX(2px);
+        }
+    }
+}

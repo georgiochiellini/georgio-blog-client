@@ -1,0 +1,14 @@
+
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+
+    // &.main {
+    //     grid-template-columns: repeat(3, 250px);
+    //     gap: 25px;
+    // }
+}

@@ -1,0 +1,100 @@
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: var(--dark-color-2);
+    box-sizing: border-box;
+    box-shadow: 0 0 5px black;
+    outline: none;
+    border: none;
+    width: fit-content;
+    margin: 0;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+    transition: all .3s ease 0s;
+
+    span {
+        display: block;
+        letter-spacing: 2px;
+        color: var(--white-color);
+    }
+
+    &.disable {
+        cursor: default;
+        span {
+            color: var(--dark-color-3);
+        }
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0 0 2px black;
+    }
+
+    &.outline {
+        // background-color: var(--dark-color-1);
+        // box-shadow: none;
+        // &::before {
+        //     content: '';
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     width: calc(100% + 4px);
+        //     height: calc(100% + 4px);
+        //     transform: translate(-2px, -2px);
+        //     border-radius: 3px;
+        //     z-index: -1;
+        //     background: linear-gradient(90deg, var(--second-color-1), var(---second-color-2));
+        // }
+        // &:hover {
+        //     &::before {
+        //         background: linear-gradient(90deg, var(--second-color-1), var(--second-color-2));
+        //     }
+        // }
+        box-shadow: none;
+        border: 1px solid var(--base-color);
+
+        &:hover {
+            border: 1px solid var(--sub-color-0);
+        }
+    }
+    
+    &.filled {
+        background-color: transparent;
+        background: linear-gradient(45deg, var(--base-color), var(--sub-color-2));
+        transition: all .3s ease 0s;
+        box-shadow: none;
+        
+        &:hover {
+            background: linear-gradient(90deg, var(--base-color), var(--sub-color-2));
+        }
+        span {
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+    }
+
+    &.underline {
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+
+        span {
+            letter-spacing: 1px;
+        }
+    }
+    
+}
+
