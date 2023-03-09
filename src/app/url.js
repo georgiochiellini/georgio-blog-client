@@ -8,7 +8,7 @@ const apiUrls = {
 
 const clientUrls = {
     developing: 'http://localhost:3000/',
-    production: 'https://watchmachine-promoting.onrender.com/'
+    production: 'https://watch-machine.onrender.com/'
 }
 
 export const API_URL = apiUrls[type]
