@@ -20,10 +20,9 @@ const PreReleaseAboutModule = () => {
                 <div className="list">
                     <span className="label">Free premium subscriptions are available for the first registered users of the service:</span>
                     <ul>
-                        <li>the first 10 users will receive a free <b>PRO 4</b> subscription.</li>
-                        <li>the first 100 users will receive a free <b>PRO 3</b> subscription.</li>
-                        <li>the first 1000 users will receive a free <b>PRO 2</b> subscription.</li>
-                        <li>the first 5000 users will receive a free <b>PRO 1</b> subscription.</li>
+                        <li>the first 10 users will receive a free <b>PRO 3</b> subscription.</li>
+                        <li>the first 100 users will receive a free <b>PRO 2</b> subscription.</li>
+                        <li>the first 1000 users will receive a free <b>PRO 1</b> subscription.</li>
                     </ul>
                 </div>
 
