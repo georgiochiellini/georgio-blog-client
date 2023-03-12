@@ -39,6 +39,13 @@ body {
     position: relative;
 }
 
+.hide {
+    visibility: hidden;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
 .component {
     width: 77vw;
     margin: 0 auto;
