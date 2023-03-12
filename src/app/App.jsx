@@ -23,7 +23,7 @@ const App = observer(() => {
         mobile.setData(true)
       }
     }).finally(() => {
-      // isLoading(false)
+      isLoading(false)
     })
   }, [])
 
