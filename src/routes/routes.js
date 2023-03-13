@@ -5,7 +5,6 @@ import About from '../pages/about/About'
 import Premium from '../pages/premium/Premium'
 import Settings from '../pages/settings-page/Settings'
 import Session from '../pages/session/Session'
-import MobilePage from "../pages/mobile-page/MobilePage"
 
 
 export const authRoutes = [
@@ -39,12 +38,5 @@ export const unauthRoutes = [
     {
         path: ABOUT_ROUTE,
         Component: <About />
-    }
-]
-
-export const mobileRoutes = [
-    {
-        path: MAIN_ROUTE,
-        Component: <MobilePage />
     }
 ]

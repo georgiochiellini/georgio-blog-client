@@ -21,4 +21,12 @@
             box-shadow: 0 0 20px var(--sub-color-0);
         }
     }
+
+    @media (max-width: 1450px) {
+        top: 0;
+        left: 50%;
+        width: 100vw;
+        height: 350px;
+        transform: translate(-50%, 0) rotate(0deg);
+    }
 }

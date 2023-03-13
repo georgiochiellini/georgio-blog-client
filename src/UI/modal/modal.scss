@@ -36,4 +36,9 @@
         }
     }
 
+    @media (max-width: 550px) {
+        .content {
+            width: 85vw;
+        }
+    }
 }

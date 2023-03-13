@@ -14,6 +14,7 @@ const HeaderBanner = () => {
                 <h2>It became easier to promote videos on YouTube. Join us now to find it out.</h2>
             </div>
             <Button className={''} label={'How it works'} onClick={() => navigate(ABOUT_ROUTE)} size={18} />
+            
         </div>
     )
 }

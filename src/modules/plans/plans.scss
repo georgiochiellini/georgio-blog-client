@@ -6,9 +6,19 @@
     grid-template-rows: repeat(2, auto);
     gap: 20px;
     justify-content: center;
+    margin: 0 auto;
 
-    // &.main {
-    //     grid-template-columns: repeat(3, 250px);
-    //     gap: 25px;
-    // }
+    &.main {
+        margin: 100px auto 70px;
+    }
+
+    @media (max-width: 920px) {
+        width: 90vw;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+    @media (max-width: 490px) {
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(6, auto);
+    }
 }

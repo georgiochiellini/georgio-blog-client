@@ -11,7 +11,7 @@ import Messages from '../components/messages/Messages'
 import Loader from '../UI/loader/Loader'
 
 const App = observer(() => {
-  const {user, mobile} = useContext(Context)
+  const {user} = useContext(Context)
   const [loading, isLoading] = useState(true)
 
   useEffect(() => {
@@ -19,9 +19,7 @@ const App = observer(() => {
       user.setUser(data)
       user.setIsAuth(true)
     }).catch((e) => {
-      if (e.response.status === 400) {
-        mobile.setData(true)
-      }
+      console.log(e);
     }).finally(() => {
       isLoading(false)
     })

@@ -35,6 +35,10 @@
             background-size: contain;
             position: relative;
 
+            @media (max-width: 900px) {
+                display: none;
+            }
+
             .duration {
                 position: absolute;
                 right: 7px;
@@ -86,6 +90,15 @@
                 .channel-title {
                     font-size: 16px;
                     font-weight: 300;
+                }
+                @media (max-width: 650px) {
+                    .title {
+                        font-size: 16px;
+                        height: 40px;
+                    }
+                    .channel-title {
+                        font-size: 14px;
+                    }
                 }
             }
             

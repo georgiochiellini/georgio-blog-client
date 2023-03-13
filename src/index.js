@@ -2,7 +2,6 @@ import React, {createContext} from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './app/App';
 import MessageStore from './app/stores/MessageStore';
-import MobileStore from './app/stores/MobileStore';
 import UserStore from './app/stores/UserStore'
 import WindowStore from './app/stores/WindowStore';
 
@@ -13,8 +12,7 @@ root.render(
   <Context.Provider value={{
     user: new UserStore(),
     messages: new MessageStore(),
-    windowOpener: new WindowStore(),
-    mobile: new MobileStore()
+    windowOpener: new WindowStore()
   }}>
     <App />
   </Context.Provider>

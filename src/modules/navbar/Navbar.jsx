@@ -10,11 +10,10 @@ import PanelUser from '../../components/panel-user/PanelUser'
 
 const Navbar = observer(() => {
     const navigate = useNavigate(null)
-    const {user, mobile} = useContext(Context)
+    const {user} = useContext(Context)
 
     return (
-        <>
-        {!mobile.data && <div className={`navbar scrolled`}>
+        <div className={`navbar scrolled`}>
             
             <div className="content component">
 
@@ -29,8 +28,7 @@ const Navbar = observer(() => {
                 
             </div>
             
-        </div>}
-        </>
+        </div>
     )
 })
 

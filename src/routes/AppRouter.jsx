@@ -2,26 +2,20 @@ import { observer } from 'mobx-react-lite'
 import React, { useContext } from 'react'
 import {Routes, Route, Navigate} from 'react-router-dom'
 import { Context } from '../index'
-import { authRoutes, mobileRoutes, unauthRoutes } from './routes'
+import { authRoutes, unauthRoutes } from './routes'
 import { MAIN_ROUTE } from './routesPath'
 
 const AppRouter = observer(() => {
-    const {user, mobile} = useContext(Context)
-
-    console.log(mobile.data)
+    const {user} = useContext(Context)
 
     return (
         <Routes>
-            {!mobile.data && user.isAuth &&
+            {user.isAuth &&
                 authRoutes.map(({path, Component}) => {
                     return <Route key={path} path={path} element={Component} />
             })}
-            {!mobile.data && !user.isAuth &&
+            {!user.isAuth &&
                 unauthRoutes.map(({path, Component}) => {
-                    return <Route key={path} path={path} element={Component} />
-            })}
-            {mobile.data && 
-                mobileRoutes.map(({path, Component}) => {
                     return <Route key={path} path={path} element={Component} />
             })}
             

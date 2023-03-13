@@ -9,14 +9,14 @@ const PanelSession = () => {
     return (
         <div className='panel-session component'>
             
-            {/* {!active &&
+            {!active &&
                 <>
                 <ButtonCircle title={'Start'} center onClick={() => setActive(true)} />
                 <div className="label">Press start to start the session</div>
                 </>
             }
 
-            {active && <SessionProcess stopFunc={() => setActive(false)} />} */}
+            {active && <SessionProcess stopFunc={() => setActive(false)} />}
 
         </div>
     )

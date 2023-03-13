@@ -15,6 +15,10 @@
     transition: all .5s ease 0s;
     z-index: 201;
 
+    @media (max-width: 515px) {
+        min-width: 90vw;
+    }
+
     // &.active {
     //     transform: translate(-50%, 0);
     // }

@@ -15,4 +15,10 @@
     .referral {
         // transform: translate(-310px, 0);
     }
+
+    @media (max-width: 500px) {
+        flex-direction: column;
+        margin-bottom: 30px;
+        gap: 20px;
+    }
 }

@@ -52,7 +52,16 @@ body {
 
     &.small {
         width: 850px;
+        @media (max-width: 920px) {
+            width: 80vw;
+        }
     }
+
+    @media (max-width: 700px) {
+        margin: 0 auto;
+        width: 85vw;
+    }
+    
 }
 
 .box {

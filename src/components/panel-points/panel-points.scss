@@ -5,6 +5,10 @@
     align-items: center;
     gap: 25px;
 
+    @media (max-width: 900px) {
+        display: none;
+    }
+
     .points {
         display: flex;
         align-items: center;

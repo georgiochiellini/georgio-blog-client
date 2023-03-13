@@ -5,17 +5,14 @@ import Message from '../../UI/message/Message'
 import './messages.scss'
 
 const Messages = observer(() => {
-    const {messages, mobile} = useContext(Context)
+    const {messages} = useContext(Context)
     
     return (
-        <>
-        {!mobile.data && <div className='messages'>
+        <div className='messages'>
             {messages.data.map((mess, index) => {
-                return <Message message={mess} position={75 + index * 50} />
+                return <Message message={mess} position={70 + index * 50} />
             })}
-        </div>}
-        </>
-        
+        </div>
     )
 })
 

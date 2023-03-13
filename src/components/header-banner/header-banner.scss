@@ -26,5 +26,63 @@
             letter-spacing: 2px;
             width: 400px;
         }
+
+    }
+
+    button {
+        margin: 0;
+    }
+
+    @media (max-width: 1450px) {
+        margin-top: -50px;
+        margin-bottom: 100px;
+        .title {
+            margin-bottom: 35px;
+            h1 {
+                text-align: center;
+                margin: 0 0 20px;
+            }
+            h2 {
+                text-align: center;
+                width: 90%;
+                margin: 0 auto;
+            }
+        }
+        & > button {
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 740px) {
+        margin-bottom: 130px;
+        .title {
+            h1 {
+                font-size: 48px;
+            }
+            h2 {
+                font-size: 18px;
+            }
+        }
+    }
+    @media (max-width: 580px) {
+        .title {
+            h1 {
+                font-size: 32px;
+            }
+            h2 {
+                font-size: 16px;
+                width: 95%;
+            }
+        }
+    }
+    @media (max-width: 400px) {
+        margin-bottom: 100px;
+        .title {
+            h1 {
+                font-size: 28px;
+            }
+            h2 {
+                font-size: 14px;
+            }
+        }
     }
 }
